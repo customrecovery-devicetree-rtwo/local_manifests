@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="customrecovery-devicetree-rtwo"
+          fetch="https://github.com/customrecovery-devicetree-rtwo" />
+
+  <project name="android_device_motorola_rtwo"
+           path="device/motorola/rtwo"
+           remote="customrecovery-devicetree-rtwo"
+           revision="main" />
+
+  <project name="android_vendor_recovery"
+           path="vendor/recovery"
+           remote="customrecovery-devicetree-rtwo"
+           revision="fox_12.1" />
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="android_bootable_recovery" />
+  <remove-project name="android_build" />
+  <remove-project name="android_build_soong" />
+  <remove-project name="android_system_update_engine" />
+  <remove-project name="android_vendor_twrp" />
+
+  <remote name="customrecovery-rtwo-forks"
+          fetch="https://github.com/customrecovery-devicetree-rtwo" />
+
+  <project name="android_bootable_recovery"
+           path="bootable/recovery"
+           remote="customrecovery-rtwo-forks"
+           revision="fox_12.1" />
+  <project name="android_build"
+           path="build/make"
+           remote="customrecovery-rtwo-forks"
+           revision="fox_12.1" />
+  <project name="android_build_soong"
+           path="build/soong"
+           remote="customrecovery-rtwo-forks"
+           revision="fox_12.1" />
+  <project name="android_system_update_engine"
+           path="system/update_engine"
+           remote="customrecovery-rtwo-forks"
+           revision="fox_12.1" />
+  <project name="android_vendor_twrp"
+           path="vendor/twrp"
+           remote="customrecovery-rtwo-forks"
+           revision="fox_12.1" />
+</manifest>
